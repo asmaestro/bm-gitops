@@ -39,9 +39,6 @@ spec:
           failureThreshold: 1
           periodSeconds: 10
   strategy:
-    # blueGreen:
-    #   activeService: rollouts-demo
-    #   previewService: rollouts-demo-preview
     canary: 
       steps:
       - setWeight: 20
